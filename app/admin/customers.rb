@@ -18,7 +18,14 @@ ActiveAdmin.register Customer do
   permit_params :fullName, :phoneNumber, :email, :notes
 
   index do
-    
+    selectable_column
+    id_column
+    column :fullName
+    column :phoneNumber
+    column :email
+    column :notes
+    column :image
+    actions
   end
 
   form do |f|
