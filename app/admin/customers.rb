@@ -15,7 +15,7 @@ ActiveAdmin.register Customer do
   #   permitted
   # end
   
-  permit_params :fullName, :phoneNumber, :email, :notes
+  permit_params :fullName, :phoneNumber, :email, :notes, :image
 
   index do
     selectable_column

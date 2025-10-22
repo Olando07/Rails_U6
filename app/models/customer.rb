@@ -3,7 +3,6 @@ class Customer < ApplicationRecord
 
   validates :fullName, presence: true
   validates :phoneNumber, presence: true
-  validates :email, presence: true
 
   def self.ransackable_associations(auth_object = nil)
     [ "image_attachment", "image_blob" ]

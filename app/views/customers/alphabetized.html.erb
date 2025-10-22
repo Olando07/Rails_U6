@@ -1,13 +1,13 @@
 <div class="box">
     <article class="media">
         <div class="media-left">
-            <figure class="image is-128x128">
+            <div style="width: 128px; height: 128px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
                 <% if customer.image.attached? %>
-                <%= image_tag customer.image, class: "is-rounded" %>
+                <%= image_tag customer.image, style: "width: 128px; height: 128px; object-fit: cover; display: block;" %>
                 <% else %>
-                <%= image_tag "https://via.placeholder.com/128", class: "is-rounded" %>
+                <%= image_tag "https://via.placeholder.com/128", style: "width: 128px; height: 128px; object-fit: cover; display: block;" %>
                 <% end %>
-            </figure>
+            </div>
         </div>
         <div class="media-content">
             <div class="content">
